@@ -1,17 +1,17 @@
 //elements
-var startbutton=document.querySelector (".startbutton button");
+var startbutton=document.querySelector (".startbutton");
 var correct= document.querySelector(".correct")
 var incorrect= document.querySelector(".incorrect")
-var timerElement= document.querySelector(".timerElement")
-var wordBlank= document.querySelector(".wordblanks")
+var timerElement= document.querySelector(".time-left")
+
 var score=document.querySelector(".Score")
 
-var scorecounter= 0;
+var scoreCounter= 0;
 
 var timer;
-var timerCount;
+var timeCount;
 
-var choices=["choice1", "choice2", "choice3", "choice4"]
+var choices=Array.from(document.querySelector(""));
 
 
 function init(){
@@ -21,10 +21,13 @@ function init(){
 //starts quiz when the start quiz button is clicked
 function startQuiz(){
    
-    timerCounter=60;
-    renderBlanks()
+    timeCount=60;
     startTimer();
+    nextQuestion();
+
 }
+
+
 //the endGame function triggers timer reaches 0
 function endGame() {
     wordBlank.textContent="All Done";
@@ -38,10 +41,10 @@ function startTimer(){
     timer=setInterval( function{
         timerCount--;
         timerElement.textContent=timerCount;
-        if (timerCount>0){
+        if (timerLeft>0){
 
         }
-        if (timerCount===0){
+        if (timerLeft===0){
             endGame
         }
 
