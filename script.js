@@ -1,44 +1,49 @@
 //elements
 var startbutton=document.querySelector (".startbutton button");
 var correct= document.querySelector(".correct")
-var correct= document.querySelector(".correct")
-var timerElement= document.querySelector(".correct")
+var incorrect= document.querySelector(".incorrect")
+var timerElement= document.querySelector(".timerElement")
 var wordBlank= document.querySelector(".wordblanks")
+var score=document.querySelector(".Score")
 
-let questions = [
-{
-    question:"1+1=",
-    choice1:"2",
-    choice2:"3",
-    choice3:"4",
-    choice4:"5"
-}
+var scorecounter= 0;
 
-]
-// startbutton.onclick=(){
-//     quizinstbox.classList.remove("startquiz")
-//     .classList.add("")
-// }
+var timer;
+var timerCount;
+
+var choices=["choice1", "choice2", "choice3", "choice4"]
+
 
 function init(){
-    getWins();
-    getLosees()
+    getScore();
 }
+
+//starts quiz when the start quiz button is clicked
 function startQuiz(){
-    isWin=false
+   
     timerCounter=60;
     renderBlanks()
     startTimer();
 }
-
+//the endGame function triggers timer reaches 0
 function endGame() {
-    wordBlank.textContent="All Done"
+    wordBlank.textContent="All Done";
+    scoreCounter++;
+    setScore();
 }
+
+
 
 function startTimer(){
     timer=setInterval( function{
         timerCount--;
-        timerElement.textContent=timerCount
+        timerElement.textContent=timerCount;
+        if (timerCount>0){
 
-    })
+        }
+        if (timerCount===0){
+            endGame
+        }
+
+    },1000);
 }
