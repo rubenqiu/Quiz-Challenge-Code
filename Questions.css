@@ -1,0 +1,23 @@
+.choices{
+    
+    margin-bottom: 10px;
+    display:flex;
+    width:75%;
+    background:red;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    flex-direction:column;
+    text-align: center;
+   
+}
+
+.choices:hover{
+    cursor: pointer;
+}
+
+.question {
+font-size: 25px;
+text-align:center;
+width:75%;
+}

@@ -1,0 +1,101 @@
+header {
+    width:100%;
+    height:200px;
+
+}
+
+.timer{
+    
+    width: 80%;
+    height: 30px;
+   
+    align-items: center;
+    margin: 10px;
+    display:flex;
+    
+    
+
+}
+
+.timetime{
+  
+    float:right;
+    left:800px;
+    font-weight:bold;
+    font-size: 20px;
+    position:relative;
+    text-align: right;
+    
+}
+
+.time-left{
+    left:800px;
+    font-weight:bold;
+    font-size: 20px;
+    position:relative;
+    text-align:right;
+    float:right;
+    
+}
+
+.view-hiscores{
+    font-weight:bold;
+    font-size: 20px;
+    height:30px;
+    width:20%;
+    float:left;
+    
+}
+
+
+
+
+.startbutton {
+  
+    text-align: center;
+    color:white;
+    font-size:20px;
+    background-color: purple;
+    cursor: pointer;
+    
+    
+}
+
+
+
+button:hover{
+background-color: blue;
+color:red;
+}
+body {
+ background-color: bisque;   
+
+}
+
+.quiz-name{
+color:blue;
+text-align:center;
+
+width:100%;
+font-weight:bold;
+
+}
+
+.quiz-inst{
+color: black;
+text-align:center;
+font-weight:bold;
+
+
+}
+
+.quizinstbox {
+    width: 60%;
+    background-color:white;
+    height:300px;
+   margin:auto;
+    border: solid;
+    border-radius: 10px; 
+    position:relative;
+
+}
