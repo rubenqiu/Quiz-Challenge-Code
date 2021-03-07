@@ -33,10 +33,6 @@ var incorrectAnswer=[];
 //     }
     
 // }
-let currentQuestion={}
-let acceptingAnswers=true;
-let questionCounter=0
-let avaiableQuestions=[]
 
 var questions = [{
     question: "1+1=",
